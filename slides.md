@@ -51,7 +51,7 @@ kodee:
   position: corner
 ---
 
-# Typesafe DSL in Kotlin: Routing
+# Typesafe DSL in Kotlin: HTML
 
 ````md magic-move
 ```kotlin
@@ -225,6 +225,9 @@ fun String.isNotEmpty(): Boolean = size > 0
 <ul>
 <li><code lang="kotlin">isNotEmpty</code> requires an explicit import</li>
 <li><code lang="kotlin">FileNameKt.isNotEmpty(string)</code> from Java</li>
+<ul>
+<li><code lang="kotlin">@file:JvmName("StringUtils")</code> turn it into <code lang="kotlin">StringUtils.isNotEmpty(string)</code></li>
+</ul>
 </ul>
 </div>
 
@@ -454,8 +457,8 @@ config.setUsername("username");
 fun <T> T.apply(block: T.() -> Unit): T = TODO()
 
 HikariConfig().apply {
-// setUsername("username")
-<span v-mark.underline="3">username</span> = "username"
+//setUsername("username")
+  <span v-mark.underline="3">username</span> = "username"
 }
 
 ```
@@ -515,17 +518,7 @@ kodee:
 ---
 
 # Build a typed DSL for prompting
-## Kotlin Notebooks
-
----
-kodee:
-  variant: greeting
-  size: small
-  position: corner
----
-
-# Build a typed DSL for prompting
-## Exercise 1 (10min)
+## Exercise 1A (10min)
 
 - Create a DSL receiver type (i.e. `class PromptBuilder`)
     - Create _at least a single_ function to `append` text to the prompt
@@ -539,7 +532,7 @@ kodee:
 ---
 
 # Build a typed DSL for prompting
-## Exercise 2 (10min)
+## Exercise 1B (10min)
 
 - Extend the `PromptBuilder` dsl with a `markdown` DSL.
     - `fun PromptBuilder.markdown(block: MarkdownBuilder.() -> Unit)`
@@ -608,6 +601,15 @@ kodee:
 operator fun <span v-mark.underline>Content</span>.unaryPlus(): Unit
 ```
 
+<div v-click=2>
+<ul>
+<li>Unary Operators</li>
+<li>Arithmetic & Augmented Assign</li>
+<li><code>a.contains(b)</code> => <code>a in b</code></li>
+<li>Comparison <code><</code>, <code><=</code>, <code>></code>, <code>=></code></li>
+</ul>
+</div>
+
 ---
 kodee:
   variant: greeting
@@ -650,8 +652,6 @@ kodee:
 
 # Context Parameters
 
-## Kotlin
-
 ````md magic-move
 ```kotlin
 context(builder: PromptBuilder)
@@ -693,7 +693,7 @@ kodee:
   position: corner
 ---
 
-# Exercise 3 (10min)
+# Exercise 2 (10min)
 
 - Integrate `Content` & `Author` into `PromptBuilder` with custom formatting
 - Create a new domain i.e., Content + comments, and integrate it into `PromptBuilder`
@@ -926,7 +926,7 @@ val nodeCallLLM <span v-mark.underline> by </span> nodeLLMRequest()
 
 <div v-click="2">
 ```kotlin
-public fun interface ReadOnlyProperty<in T, out V> {
+fun interface ReadOnlyProperty<in T, out V> {
     operator fun getValue(thisRef: T, property: KProperty<*>): V
 }
 ```
@@ -953,7 +953,7 @@ val nodeCallLLM by nodeLLMRequest()
 ```
 
 ```kotlin
-public fun interface ReadOnlyProperty<in T, out V> {
+fun interface ReadOnlyProperty<in T, out V> {
     operator fun getValue(thisRef: T, property: KProperty<*>): V
 }
 ```
@@ -964,6 +964,11 @@ class AIAgentNodeDelegate<In, Out>(...) {
 }
 ```
 
+---
+kodee:
+  variant: greeting
+  size: small
+  position: corner
 ---
 
 # Delegation
@@ -1013,6 +1018,11 @@ class LazyNamedValue<A>(
 ```
 ````
 
+---
+kodee:
+  variant: greeting
+  size: small
+  position: corner
 ---
 
 # Koog DSL
@@ -1076,6 +1086,11 @@ val strategy = functionalStrategy<String, String> { input ->
 ```
 ````
 
+---
+kodee:
+  variant: greeting
+  size: small
+  position: corner
 ---
 
 # Koog DSL
