@@ -2,6 +2,16 @@
   <library name="Permanent Script Dependencies">
     <CLASSES>
       <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-ide-classpath-shadowed-jar/kotlin-jupyter-ide-classpath-shadowed-0.15.0-648.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/lib-0.15.0-648.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/kotlin-reflect-2.2.20.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/protocol-api-0.15.0-648.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/annotations-13.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/api-0.15.0-648.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/kotlinx-serialization-json-jvm-1.9.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/kotlin-stdlib-2.2.20.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/kotlin-script-runtime-2.2.20.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/slf4j-api-2.0.17.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.0-648/kotlin-jupyter-script-classpath-shadowed-zip_extracted/kotlinx-serialization-core-jvm-1.9.0.jar" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -697,9 +697,7 @@ kodee:
 
 - Integrate `Content` & `Author` into `PromptBuilder` with custom formatting
 - Create a new domain i.e., Content + comments, and integrate it into `PromptBuilder`
-- Create different variants using `PromptBuilder` & `MarkdownBuilder`
 - Create a function that writes `Content` as xml within `PromptBuilder` directly
-  - Consider building a base DSL or extending PromptBuilder directly with behavior
 
 ---
 kodee:
