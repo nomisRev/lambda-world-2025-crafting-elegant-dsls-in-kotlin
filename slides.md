@@ -921,7 +921,7 @@ kodee:
 # Delegation
 
 ```kotlin
-val nodeCallLLM <span v-mark.underline> by </span> nodeLLMRequest()
+val nodeCallLLM <span v-mark.underline>by</span> nodeLLMRequest()
 ```
 
 <div v-click="2">
