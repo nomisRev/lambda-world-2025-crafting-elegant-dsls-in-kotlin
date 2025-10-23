@@ -458,9 +458,11 @@ config.setUsername("username");
 ```kotlin
 fun <T> T.apply(block: T.() -> Unit): T = TODO()
 
-HikariConfig().apply {
+val config = HikariConfig().apply {
 //setUsername("username")
   <span v-mark.underline="3">username</span> = "username"
+  password = ""
+  jdbcUrl = ""
 }
 
 ```
@@ -521,6 +523,8 @@ kodee:
 
 # Build a typed DSL for prompting
 ## Exercise 1A (10min)
+
+`github.com/nomisRev/lambda-world-2025-crafting-elegant-dsls-in-kotlin`
 
 - Create a DSL receiver type (i.e. `class PromptBuilder`)
     - Create _at least a single_ function to `append` text to the prompt
