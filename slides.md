@@ -680,6 +680,7 @@ context(builder: PromptBuilder)
 operator fun Content.unaryPlus(): Unit = TODO()
 
 prompt { // context(PromptBuilder) () -> A
+    Content(...).unaryPlus()
     +Content(...)
 }
 ```
@@ -1020,6 +1021,22 @@ class LazyNamedValue<A>(
         return value!!
     }
 }
+```
+
+```kotlin
+class LazyNamedValue<A>(
+    private val block: (name: String) -> A, 
+    private var value: A? = null
+) {
+    operator fun getValue(thisRef: Any?, property: KProperty<*>): A {
+        if (value == null) {
+            value = block(property.name)
+        }
+        return value!!
+    }
+}
+
+
 ```
 ````
 
